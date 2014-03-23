@@ -1,9 +1,9 @@
 @import "helpers";
 @import "fonts/clear-sans.css";
 
-$field-width: 500px;
+$field-width: 650px;
 $grid-spacing: 15px;
-$grid-row-cells: 4;
+$grid-row-cells: 5;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
 $tile-border-radius: 3px;
 
@@ -318,7 +318,7 @@ hr {
     font-weight: bold;
     z-index: 10;
 
-    font-size: 55px;
+    font-size: 45px;
   }
 
   // Movement transition
@@ -377,6 +377,7 @@ hr {
                     inset 0 0 0 1px rgba(white, $glow-opacity / 3);
       }
 
+    /*
       // Adjust font size for bigger numbers
       @if $power >= 100 and $power < 1000 {
         font-size: 45px;
@@ -392,6 +393,8 @@ hr {
           font-size: 15px;
         }
       }
+    */
+
     }
 
     $exponent: $exponent + 1;
