@@ -447,6 +447,10 @@ hr {
   @include animation-fill-mode(backwards);
 }
 
+.tile sub{
+  font-size: 45%;
+}
+
 .above-game {
   @include clearfix;
 }

@@ -1,13 +1,11 @@
 {
   "name": "2048",
   "version": "0.0.0",
-  "description": "clone of 2048 ",
-  "main": "gulpfile.js",
+  "description": "Clone of 2048 in Periodic table",
+  "author": "jackysee",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "~3.5.6",
     "gulp-sass": "~0.7.1"
-  },
-  "devDependencies": {},
-  "author": "jackysee",
-  "license": "MIT"
+  }
 }
