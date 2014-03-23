@@ -46,6 +46,14 @@ HTMLActuator.prototype.clearContainer = function (container) {
   }
 };
 
+HTMLActuator.prototype.TilesValue = 'H,He,Li,Be,B,C,N,O,F,Ne,Na,Mg,Al,Si,P,S,Cl,Ar,Ka,Ca'.split(',');
+
+HTMLActuator.prototype.log2 = function(x) {
+  return Math.log(x) / Math.LN2;
+}
+
+HTMLActuator.prototype.max = Math.pow(2, HTMLActuator.prototype.TilesValue.length);
+
 HTMLActuator.prototype.addTile = function (tile) {
   var self = this;
 
@@ -62,7 +70,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  inner.textContent = this.TilesValue[this.log2(tile.value)-1];
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
