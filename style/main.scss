@@ -450,10 +450,16 @@ hr {
   z-index: 20;
   @include animation(pop 200ms ease $transition-speed);
   @include animation-fill-mode(backwards);
+  position: relative;
 }
 
 .tile sub{
   font-size: 45%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  line-height: 70%;
+  padding: 5px;
 }
 
 .above-game {
