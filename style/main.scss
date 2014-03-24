@@ -1,7 +1,7 @@
 @import "helpers";
 @import "fonts/clear-sans.css";
 
-$field-width: 650px;
+$field-width: 550px;
 $grid-spacing: 15px;
 $grid-row-cells: 5;
 $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
